@@ -1,4 +1,5 @@
 <template>
+    <headerGeneral />
     <div class="Sucursales">
         <div class="container-table">
             <DataTable Alcaldia="Iztapalapa" class="tabla"/>
@@ -9,11 +10,13 @@
     </div> 
 </template>
 <script>
-import Footer from '@/components/FooterGeneral.vue'
+import headerGeneral from '@/components/HeaderGeneral.vue'
 import DataTable from '@/components/DataTable.vue'
+import Footer from '@/components/FooterGeneral.vue'
 export default {
     name: "SucursalesView",
     components: {
+        headerGeneral,
         DataTable,
         Footer
     }

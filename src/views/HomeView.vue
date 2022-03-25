@@ -1,26 +1,28 @@
 <template>
+  <headerGeneral />
   <div class="home">
-    <ImgPrincipal/>
-    <SeccionCard/>
-    <Contacto/>
-    <Footer/>
+    <ImgPrincipal />
+    <SeccionCard />
+    <Contacto />
+    <Footer />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import ImgPrincipal from '@/components/ImgPrincipal.vue'
-import SeccionCard from '@/components/SeccionCard.vue'
-import Contacto from '@/components/HomeContact.vue'
-import Footer from '@/components/FooterGeneral.vue'
+import headerGeneral from "@/components/HeaderGeneral.vue";
+import ImgPrincipal from "@/components/ImgPrincipal.vue";
+import SeccionCard from "@/components/SeccionCard.vue";
+import Contacto from "@/components/HomeContact.vue";
+import Footer from "@/components/FooterGeneral.vue";
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
+    headerGeneral,
     ImgPrincipal,
     SeccionCard,
     Contacto,
-    Footer
-  }
-}
+    Footer,
+  },
+};
 </script>

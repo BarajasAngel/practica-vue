@@ -3,6 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import ProductosView from '@/views/ProductosView.vue'
 import SucursalesView from '@/views/SucursalesView.vue'
 import FormularioView from '@/views/FormularioView.vue'
+import LoginView from '@/views/LoginView.vue'
 
 const routes = [
   {
@@ -24,7 +25,13 @@ const routes = [
     path: '/formulario',
     name: 'formulario',
     component: FormularioView
+  },
+  {
+    path: '/login',
+    name: 'login',
+    component: LoginView
   }
+
 ]
 
 const router = createRouter({

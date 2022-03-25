@@ -1,6 +1,7 @@
 <template>
-    <div class="form">
-        <span>Formulario de Compra</span>
+    <headerGeneral/>
+    <div class="form">        
+        <span>Formulario de Compra</span>        
         <Inputs/>
         <Sabores/>
         <Decoracion/>
@@ -17,11 +18,12 @@ import Sabores from '@/components/SelectSabores.vue'
 import Decoracion from '@/components/SectionDecoraciones.vue'
 import Datos from '@/components/DatosExtra.vue'
 import Footer from '@/components/FooterGeneral.vue'
-
+import headerGeneral from '@/components/HeaderGeneral.vue'
 
 export default {
     name: 'formularioView',
     components: {
+        headerGeneral,
         Inputs,
         Sabores,
         Decoracion,
@@ -38,8 +40,8 @@ export default {
 }
 span{
     align-self: center;
-    font-size: 4rem;
-    margin-top: 3rem;
+    font-size: 5.8rem;
+    margin-top: 2rem;    
 }
 .btn{
     display: flex;

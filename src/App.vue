@@ -1,16 +1,6 @@
-<template>
-  <header class="container-header">
-    <img src="./assets/Logo.png" alt="Logo" />
-    <ul class="container-navegacion">
-      <li><router-link to="/">Inicio</router-link></li>
-      <li><router-link to="/productos">Productos</router-link></li>
-      <li><router-link to="/sucursales">Sucursales</router-link></li>
-      <li><router-link to="/formulario">Comprar Ahora</router-link></li>
-    </ul>
-  </header>
+<template>  
   <router-view />
 </template>
-
 <style>
 @import url("https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@600;700&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
@@ -56,7 +46,7 @@ ul.container-navegacion > li {
 li > a {
   text-decoration: none;
   color: white;
-  padding: 0.7rem;
+  padding: 0.3rem;
 }
 ul.container-navegacion > li > a:hover {
   background-color: #c09cfaa9;
