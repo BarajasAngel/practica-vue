@@ -5,6 +5,7 @@
       <li><router-link to="/">Inicio</router-link></li>
       <li><router-link to="/productos">Productos</router-link></li>
       <li><router-link to="/sucursales">Sucursales</router-link></li>
+      <li><router-link to="/formulario">Comprar Ahora</router-link></li>
     </ul>
   </header>
   <router-view />

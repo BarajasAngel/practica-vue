@@ -71,6 +71,25 @@ export default createStore({
         precio: "$199.00",
         id: 5,
       },
+      {
+        name: "Red velvet",
+        url: require("@/assets/Sabor6.jpg"),
+        precio: "$252.00",
+        id: 6,
+      },
+      {
+        name: "Coco",
+        url: require("@/assets/Sabor7.jpg"),
+        precio: "$199.00",
+        id: 7,
+      },
+      {
+        name: "Zanahoria",
+        url: require("@/assets/Sabor8.jpg"),
+        precio: "$199.00",
+        id: 8,
+      },
+
     ],
     decorationCake: [
       {
