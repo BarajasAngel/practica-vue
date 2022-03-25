@@ -28,7 +28,7 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -9.7rem;
+  top: -9.5rem;
 }
 .container-titulo {
   margin: 0px 6rem;

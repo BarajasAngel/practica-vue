@@ -1,17 +1,17 @@
 <template>
     <div class="productos">        
         <h1>
-            lorem impus
+            ¡Lo más comprado!
         </h1>
-        <div class="containerCard">
+        <div class="containerCard fondo1">
             <h2>Pasteles</h2>
             <ProductosCard class="Card" :card="'Pasteles'"/>
         </div>
-        <div class="containerCard">
+        <div class="containerCard fondo2">
             <h2>Sabores</h2>
             <ProductosCard class="Card" :card="'Sabores'"/>
         </div>
-        <div class="containerCard">
+        <div class="containerCard fondo3">
             <h2>Decoraciones</h2>
             <ProductosCard class="Card" :card="'Decoraciones'"/>
         </div>
@@ -42,10 +42,23 @@ h1{
     user-select: none;
 }
 .containerCard{
-    margin: 5rem 0rem;
+    margin: 3rem 0rem;
+    padding: 2rem 0rem;
+    background-color: #ffded9b7;
+    border-radius: 1rem;
 }
 .containerCard h2{    
-    font-size: 3.2rem;        
+    font-size: 4.2rem;        
     margin-left: 15%;
+    font-family: 'Caveat', cursive;
+}
+.fondo1{
+    background-color: #ffded9a4;
+}
+.fondo2{
+    background-color: #d5ccff73;
+}
+.fondo3{
+    background-color: #cdffcc73;
 }
 </style>

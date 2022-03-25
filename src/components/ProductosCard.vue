@@ -3,13 +3,13 @@
     :effect="'coverflow'"
     :grabCursor="true"
     :centeredSlides="true"
-    :slidesPerView="'auto'"
+    :slidesPerView="'auto'"            
     :coverflowEffect="{
       rotate: 50,
       stretch: 0,
       depth: 100,
       modifier: 1,
-      slideShadows: true,
+      slideShadows: false,      
     }"
     :pagination="true"
     :modules="modules"
@@ -18,24 +18,30 @@
     <template v-if="card == 'Pasteles'">
       <swiper-slide v-for="show in $store.state.cakeShow" :key="show.id">
         <img :src="show.url" :alt="show.name" />
-        <span>
+        <span class="precio">
           {{show.precio}}
         </span>
       </swiper-slide>
     </template>
     <template v-if="card == 'Sabores'">
-      <swiper-slide v-for="show in $store.state.cakeShow" :key="show.id">
+      <swiper-slide v-for="show in $store.state.tasteCake" :key="show.id">
         <img :src="show.url" :alt="show.name" />
-        <span>
+        <span class="precio">
           {{show.precio}}
+        </span>
+        <span class="nombre">
+          {{show.name}}
         </span>
       </swiper-slide>
     </template>
     <template v-if="card == 'Decoraciones'">
-      <swiper-slide v-for="show in $store.state.cakeShow" :key="show.id">
+      <swiper-slide v-for="show in $store.state.decorationCake" :key="show.id">
         <img :src="show.url" :alt="show.name" />
-        <span>
+        <span class="precio">
           {{show.precio}}
+        </span>
+        <span class="nombre">
+          {{show.name}}
         </span>
       </swiper-slide>
     </template>
@@ -80,19 +86,29 @@ export default {
   background-position: center;
   background-size: cover;
   width: 300px;
-  height: 250px;
+  height: 31.5rem;
 }
 
 .swiper-slide img {
   display: block;
   width: 100%;
 }
-span{
+.precio{
   position:relative;
   top:-18%;
   left:5%;
   color: black;
-  font-size: 2.8rem;
+  font-size: 2.2rem;
+  background-color: rgb(217, 230, 255,0.7);
+  border-radius: 1rem;  
+  padding: 0.2rem 0.5rem;
+}
+.nombre{
+  position:relative;
+  top:-75%;
+  left:10%;
+  color: black;
+  font-size: 2.2rem;
   background-color: rgb(217, 230, 255,0.7);
   border-radius: 1rem;  
   padding: 0.2rem 0.5rem;

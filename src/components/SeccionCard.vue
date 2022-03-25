@@ -60,8 +60,9 @@ export default {
   overflow: hidden;
 }
 .margin-subtitulo {
-  margin-bottom: 2rem;
-  font-size: 2.7rem;
+  font-family: 'Caveat', cursive;
+  margin-bottom: 4rem;
+  font-size: 4.9rem;
 }
 .card-container {
   display: grid;
