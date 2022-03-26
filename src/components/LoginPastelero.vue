@@ -7,7 +7,7 @@
             <label for="">Contraseña:</label>
             <input type="password" placeholder="Ingresa tu contraseña aquí">
             <a href="/">Click aquí si no eres el pastelero</a>
-            <button>Iniciar Sesión</button>
+            <a class="button" href="#/pastelero" role="button">Iniciar Sesión</a>
         </div>
     </section>
 </template>
@@ -34,11 +34,17 @@ label{
 input{
     height: 3rem;
 }
-button{
-    padding: 1rem 0rem;
+.button{
+    padding: 2rem 4rem;
     border-radius: 0.6rem;
     background-color: #FFF1E6;
     cursor:pointer;
+    text-decoration: none;
+    color: black;
+}
+.button:hover{
+    color: #FFF1E6;
+    background-color: black;
 }
 label, input, button{
     font-size: 1.6rem;
@@ -52,6 +58,6 @@ img{
 a{    
     font-size: 1.2rem;
     place-self: center;
-    margin: 2rem 0rem;
+    margin: 2rem 0rem;    
 }
 </style>

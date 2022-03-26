@@ -44,8 +44,8 @@ export default createStore({
       {
         name: "Chocolate",
         url: require("@/assets/Sabor1.jpg"),
-        precio: "$100.00",
-        id: 1,
+        precio: "$100.00",        
+        id: 1,        
       },
       {
         name: "Vainilla",

@@ -4,6 +4,7 @@ import ProductosView from '@/views/ProductosView.vue'
 import SucursalesView from '@/views/SucursalesView.vue'
 import FormularioView from '@/views/FormularioView.vue'
 import LoginView from '@/views/LoginView.vue'
+import HomePasteleroView from '@/views/HomePasteleroView.vue'
 
 const routes = [
   {
@@ -30,6 +31,11 @@ const routes = [
     path: '/login',
     name: 'login',
     component: LoginView
+  },
+  {
+    path: '/pastelero',
+    name: 'pastelero',
+    component: HomePasteleroView
   }
 
 ]
