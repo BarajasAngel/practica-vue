@@ -7,7 +7,7 @@ export default createStore({
         name: "Pastel chocoflan",
         url: require("@/assets/pastel1.jpg"),
         precio: "$105.00",
-        id: 1,
+        id: 1,        
       },
       {
         name: "Pastel chocolate",
@@ -45,49 +45,73 @@ export default createStore({
         name: "Chocolate",
         url: require("@/assets/Sabor1.jpg"),
         precio: "$100.00",        
-        id: 1,        
+        id: 1,
+        color:'#00c176',
+        numero: '100',
+        porcentaje: '0'
       },
       {
         name: "Vainilla",
         url: require("@/assets/Sabor2.jpg"),
         precio: "$50.00",
         id: 2,
+        color:'#00c176',
+        numero: '100',
+        porcentaje: '0'
       },
       {
         name: "Fresa",
         url: require("@/assets/Sabor3.jpg"),
         precio: "$99.00",
         id: 3,
+        color:'#00c176',
+        numero: '100',
+        porcentaje: '0'
       },
       {
         name: "Limón",
         url: require("@/assets/Sabor4.jpg"),
         precio: "$125.00",
         id: 4,
+        color:'#00c176',
+        numero: '100',
+        porcentaje: '0'
       },
       {
         name: "Café",
         url: require("@/assets/Sabor5.jpg"),
         precio: "$199.00",
         id: 5,
+        color:'#00c176',
+        numero: '100',
+        porcentaje: '0'
       },
       {
         name: "Red velvet",
         url: require("@/assets/Sabor6.jpg"),
         precio: "$252.00",
         id: 6,
+        color:'#00c176',
+        numero: '100',
+        porcentaje: '0'
       },
       {
         name: "Coco",
         url: require("@/assets/Sabor7.jpg"),
         precio: "$199.00",
         id: 7,
+        color:'#00c176',
+        numero: '100',
+        porcentaje: '0'
       },
       {
         name: "Zanahoria",
         url: require("@/assets/Sabor8.jpg"),
         precio: "$199.00",
         id: 8,
+        color:'#00c176',
+        numero: '100',
+        porcentaje: '0'
       },
 
     ],
@@ -97,30 +121,45 @@ export default createStore({
         url: require("@/assets/Decoracion1.jpg"),
         precio: "$50.00",
         id: 1,
+        color:'#00c176',
+        numero: '100',
+        porcentaje: '0'
       },
       {
         name: "Fondant",
         url: require("@/assets/Decoracion2.jpg"),
         precio: "$25.00",
         id: 2,
+        color:'#00c176',
+        numero: '100',
+        porcentaje: '0'
       },
       {
         name: "Chantilly",
         url: require("@/assets/Decoracion3.jpg"),
         precio: "$30.00",
         id: 3,
+        color:'#00c176',
+        numero: '100',
+        porcentaje: '0'
       },
       {
         name: "Merengue",
         url: require("@/assets/Decoracion4.jpg"),
         precio: "$15.00",
         id: 4,
+        color:'#00c176',
+        numero: '100',
+        porcentaje: '0'
       },
       {
         name: "Caramelo",
         url: require("@/assets/Decoracion5.jpg"),
         precio: "$55.00",
         id: 5,
+        color:'#00c176',
+        numero: '100',
+        porcentaje: '0'
       },
     ],
     Iztapalapa: [
@@ -191,7 +230,11 @@ export default createStore({
     ],
   },
   getters: {},
-  mutations: {},
+  mutations: {
+    // LlenarFormulario(state,nombre,apellido,telefono,correo,sabores,decoraciones,detalles){
+      
+    // }
+  },
   actions: {},
   modules: {},
 });

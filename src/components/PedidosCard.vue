@@ -6,6 +6,7 @@
       <p id="Datos Extras">
         Holasas
       </p>
+      <button>Comprar Ahora</button>
     </section>
     <section class="container-secundario">
       <span id="Nombre"> Nombre Completo: </span>
@@ -16,6 +17,7 @@
         distinctio aliquid nulla nemo debitis! Eaque facilis at exercitationem.
         Ea, iste animi.
       </p>
+      <button>Comprar Ahora</button>
     </section>
     <section class="container-secundario">
       <span id="Nombre"> Nombre Completo: </span>
@@ -26,6 +28,7 @@
         distinctio aliquid nulla nemo debitis! Eaque facilis at exercitationem.
         Ea, iste animi.
       </p>
+      <button>Comprar Ahora</button>
     </section>
     <section class="container-secundario">
       <span id="Nombre"> Nombre Completo: </span>
@@ -36,6 +39,7 @@
         distinctio aliquid nulla nemo debitis! Eaque facilis at exercitationem.
         Ea, iste animi.
       </p>
+      <button>Comprar Ahora</button>
     </section>
   </article>
 </template>
@@ -47,7 +51,7 @@
     align-items: center;
     padding: 0rem 10rem;
     gap: 2.8rem;        
-}
+}   
 .container-secundario{
     display: flex;
     flex-direction: column;

@@ -4,27 +4,27 @@
       <div class="percent">
         <svg>
           <circle cx="70" cy="70" r="70"></circle>
-          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" :style="{'stroke':sabor.color, 'stroke-dashoffset':sabor.porcentaje}"></circle>
         </svg>
         <div class="number">
-          <h2>87 <span>%</span></h2>
+          <h2>{{sabor.numero}} <span>%</span></h2>
         </div>
       </div>
       <h2 class="text">{{sabor.name}}</h2>
     </div>
   </div>
   <div class="container-porcentaje" v-if="tipo == 'Decoraciones'">
-    <div class="box" v-for="sabor in $store.state.decorationCake" :key="sabor.id">
+    <div class="box" v-for="decoracion in $store.state.decorationCake" :key="decoracion.id">
       <div class="percent">
         <svg>
           <circle cx="70" cy="70" r="70"></circle>
-          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" :style="{'stroke':decoracion.color, 'stroke-dashoffset':decoracion.porcentaje}"></circle>
         </svg>
         <div class="number">
-          <h2>87 <span>%</span></h2>
+          <h2>{{decoracion.numero}} <span>%</span></h2>
         </div>
       </div>
-      <h2 class="text">{{sabor.name}}</h2>
+      <h2 class="text">{{decoracion.name}}</h2>
     </div>
   </div>
 </template>
@@ -32,7 +32,13 @@
 export default {
   props:{
     tipo: String
-  }
+  },
+  methods:{
+    color: function(){
+      const color = document.getElementsByClassName("porcentaje-sabores");
+      color.style.stroke = "#cf1500";
+    }
+  }    
 }
 </script>
 <style scoped>

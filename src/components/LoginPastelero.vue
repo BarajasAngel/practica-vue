@@ -6,8 +6,8 @@
             <input type="text" placeholder="Ingresa tu usuario aquí">
             <label for="">Contraseña:</label>
             <input type="password" placeholder="Ingresa tu contraseña aquí">
-            <a href="/">Click aquí si no eres el pastelero</a>
-            <a class="button" href="#/pastelero" role="button">Iniciar Sesión</a>
+            <router-link to="/">Click aquí si no eres el pastelero</router-link>            
+            <router-link class="button" to="/pastelero">Iniciar Sesión</router-link>
         </div>
     </section>
 </template>
