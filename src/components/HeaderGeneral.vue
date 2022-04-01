@@ -1,6 +1,6 @@
 <template>
   <header class="container-header">
-    <img src="@/assets/Logo.png" alt="Logo" />
+    <img src="@/assets/logo.png" alt="Logo" />
     <ul class="container-navegacion">
       <li><router-link to="/">Inicio</router-link></li>
       <li><router-link to="/productos">Productos</router-link></li>
