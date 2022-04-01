@@ -87,4 +87,22 @@ export default {
   filter: brightness(60%);
   overflow: hidden;
 }
+@media (max-width:750px) {
+  .card-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .card-section{
+    top: -12rem;
+  }
+}
+@media (max-width:574px) {  
+  .card-section{
+    top: -18rem;
+  }
+}
+@media (max-width:500px) {
+    .card-container{
+    grid-template-columns: 1fr;
+  }
+}
 </style>

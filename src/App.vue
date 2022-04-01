@@ -39,14 +39,12 @@ header>img{
 }
 
 ul.container-navegacion > li {
-  padding: 2rem;
-  margin: 0rem 1rem;
+  padding: 2rem;  
   list-style: none;
 }
 li > a {
   text-decoration: none;
-  color: white;
-  padding: 0.3rem;
+  color: white;  
 }
 ul.container-navegacion > li > a:hover {
   background-color: #c09cfaa9;

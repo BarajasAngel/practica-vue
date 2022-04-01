@@ -208,10 +208,10 @@ export default {
   align-items: center;
 }
 .container {
-  min-width: 75rem;
+  width: 70%;
   background-color: white;
   height: 100%;
-  margin: 2rem;
+  margin: 0rem;
   padding: 2rem;
 }
 .container-inputs {
@@ -231,5 +231,21 @@ span {
 }
 .container-btn {
   padding: 1.6rem 0rem;
+}
+@media(max-width:725px){
+.container-inputs{
+  grid-template-columns: 1fr;
+}
+.container-checkbox{
+  grid-template-columns: repeat(3, 1fr);
+}
+}
+@media(max-width:590px){
+ .container-checkbox{
+  grid-template-columns: repeat(2, 1fr);
+} 
+.container{
+  width: 90%;
+}
 }
 </style>

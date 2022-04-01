@@ -111,7 +111,7 @@ export default createStore({
         identificador: "caf",
       },
       {
-        name: "Red velvet",
+        name: "Red",
         url: require("@/assets/Sabor6.jpg"),
         precio: "$252.00",
         id: 6,

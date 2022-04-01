@@ -55,4 +55,14 @@ section.contenidoContact {
   padding: 1rem 3rem;
   align-self: flex-end;
 }
+@media(max-width: 700px){
+  .containerContact{
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 350px) { 
+  .containerContact{
+   margin: 0rem;
+  }
+}
 </style>

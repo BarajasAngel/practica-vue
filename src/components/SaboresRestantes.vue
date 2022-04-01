@@ -45,7 +45,7 @@ export default {
 .container-porcentaje {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 5rem;
+  gap: 4rem;
   justify-content: center;
   align-items: center;   
 }
@@ -58,7 +58,7 @@ export default {
   background-color: #fff;
   box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
   border-radius: 0.6rem;
-  padding: 4rem 0rem;
+  padding: 4rem 1rem;
 }
 .box .percent {
   position: relative;
@@ -112,5 +112,22 @@ export default {
   color: #999;
   font-weight: 700px;
   letter-spacing: 1px;
+}
+@media(max-width:860px){
+  .container-porcentaje{
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:2rem;
+  }
+}
+@media(max-width:860px){
+  .container-porcentaje{
+    grid-template-columns:  1fr 1fr;    
+  }
+}
+@media (max-width:430px){
+  .container-porcentaje{
+    grid-template-columns: 1fr;    
+    margin: 4rem 0rem;
+  }
 }
 </style>

@@ -57,9 +57,10 @@ export default {
 h2{
     position: relative;
     top:0;
-    left: 0%;
+    left: 0;
     margin-bottom: 4rem;
     font-size: 2.8rem;
     color: black;
+    text-align: center;
 }
 </style>
