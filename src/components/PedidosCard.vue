@@ -1,56 +1,24 @@
 <template>
-  <article class="container-caja">
+  <article class="container-caja" v-for="(pedidos,index) in $store.state.user" :key="index">
     <section class="container-secundario">
-      <span id="Nombre"> Nombre Completo: </span>
-      <span id="Correo"> Correo: </span>
+      <span id="Nombre"> Nombre Completo: {{pedidos.name}} </span>
+      <span id="Correo"> Correo: {{pedidos.email}}</span>
+      <span id="telefono"> Teléfono: {{pedidos.phone}}</span>
       <p id="Datos Extras">
-        Holasas
+        {{pedidos.text}}
       </p>
-      <button>Comprar Ahora</button>
-    </section>
-    <section class="container-secundario">
-      <span id="Nombre"> Nombre Completo: </span>
-      <span id="Correo"> Correo: </span>
-      <p id="Datos Extras">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat
-        maxime totam, sequi obcaecati a accusamus, voluptas dignissimos
-        distinctio aliquid nulla nemo debitis! Eaque facilis at exercitationem.
-        Ea, iste animi.
-      </p>
-      <button>Comprar Ahora</button>
-    </section>
-    <section class="container-secundario">
-      <span id="Nombre"> Nombre Completo: </span>
-      <span id="Correo"> Correo: </span>
-      <p id="Datos Extras">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat
-        maxime totam, sequi obcaecati a accusamus, voluptas dignissimos
-        distinctio aliquid nulla nemo debitis! Eaque facilis at exercitationem.
-        Ea, iste animi.
-      </p>
-      <button>Comprar Ahora</button>
-    </section>
-    <section class="container-secundario">
-      <span id="Nombre"> Nombre Completo: </span>
-      <span id="Correo"> Correo: </span>
-      <p id="Datos Extras">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas fugiat
-        maxime totam, sequi obcaecati a accusamus, voluptas dignissimos
-        distinctio aliquid nulla nemo debitis! Eaque facilis at exercitationem.
-        Ea, iste animi.
-      </p>
-      <button>Comprar Ahora</button>
-    </section>
+      <button>Enviar Pedido</button>
+    </section>  
   </article>
 </template>
 <style scoped>
 .container-caja{
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     justify-content: center;
     align-items: center;
     padding: 0rem 10rem;
-    gap: 2.8rem;        
+    margin: 5rem 0rem;    
 }   
 .container-secundario{
     display: flex;
