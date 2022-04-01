@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="footer">
-      <img src="@/assets/Logo.png" width="175px" alt="Logo" />
+      <img src="@/assets/logo.png" width="175px" alt="Logo" />
       <ul class="list-footer">
         <li>Escríbenos</li>
         <li>me@correo.com</li>
